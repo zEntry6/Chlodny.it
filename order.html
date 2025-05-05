@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/images/Icon cl.svg" type="image/x-icon" />
+  <title>Chlodny.IT - Order</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://kit.fontawesome.com/f1aa552adb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/logo cl.svg" alt="Chlodny.IT Logo" /></a>
+    </div>
+    <div class="nav">
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="dropdown" id="dropdown-menu">
+    <span class="close-dropdown" id="close-dropdown">X</span>
+    <a href="index.html">Home</a>
+    <a href="service.html">Service</a>
+    <a href="order.html">Order</a>
+  </div>
+
+  <section class="order-form">
+    <div class="form-card">
+      <h2>Order Your Service</h2>
+      <p>Fill in the details below to start your project with Chlodny.IT. We will contact you shortly for further discussions.</p>
+      
+      <form action="https://formsubmit.co/el/wiyupo" method="POST" id="orderForm">
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user"></i> Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        
+        <div class="form-group">
+          <label for="service"><i class="fas fa-cogs"></i> Select Service</label>
+          <select id="service" name="service" required>
+            <option value="Web Development">Web Development</option>
+            <option value="Mobile App Development">Mobile App Development</option>
+            <option value="E-commerce Development">E-commerce Development</option>
+            <option value="API Integration & Backend Development">API Integration & Backend Development</option>
+            <option value="CMS Development">CMS Development</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Landing Page Design & Development">Landing Page Design & Development</option>
+            <option value="Web Animation & Interaction">Web Animation & Interaction</option>
+            <option value="Branding & Visual Identity Design">Branding & Visual Identity Design</option>
+            <option value="Web Maintenance & Support">Web Maintenance & Support</option>
+            <option value="UI/UX Audit & Consulting">UI/UX Audit & Consulting</option>
+            <option value="SEO Optimization">SEO Optimization</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="project-description"><i class="fas fa-pencil-alt"></i> Project Description</label>
+          <textarea id="project-description" name="project-description" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="reference"><i class="fas fa-paperclip"></i> Attach Reference (Optional)</label>
+          <input type="file" id="reference" name="reference" />
+        </div>
+
+        <div class="form-group">
+          <label for="deadline"><i class="fas fa-calendar-alt"></i> Expected Deadline</label>
+          <input type="date" id="deadline" name="deadline" required />
+        </div>
+
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+      
+      <div id="confirmationMessage" class="confirmation-message">
+        <p>Thank you! Your order has been received. We will contact you shortly.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>Contact: <a href="mailto:chlodny.it@gmail.com?subject=I%27d%20Like%20to%20Work%20with%20Chlodny%20IT%20%E2%80%93%20Let%27s%20Talk!&body=Hi%20Chlodny%20IT%2C%0D%0A%0D%0AI%27m%20interested%20in%20your%20services.%20Please%20let%20me%20know%20how%20we%20can%20get%20started.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D">chlodny.it@gmail.com</a></div>
+    <div><a href="privacy.html">Privacy Policy</a> | &copy; 2025 Chlodny.IT</div>
+    <div>Powered by <a href="index.html">Chlodny.IT</a></div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

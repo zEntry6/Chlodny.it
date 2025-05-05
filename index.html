@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/images/Icon cl.svg" type="image/x-icon" />
+  <title>Chlodny.IT - Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://kit.fontawesome.com/f1aa552adb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/logo cl.svg" alt="Chlodny.IT Logo" /></a>
+    </div>
+    <div class="nav">
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="dropdown" id="dropdown-menu">
+    <span class="close-dropdown" id="close-dropdown">X</span>
+    <a href="index.html">Home</a>
+    <a href="service.html">Service</a>
+    <a href="order.html">Order</a>
+  </div>
+
+  <section class="slider">
+    <div class="slides" id="slides">
+      <img src="assets/images/banner1.svg" alt="Promo 1" />
+      <img src="assets/images/banner2.svg" alt="Promo 2" />
+      <img src="assets/images/banner3.svg" alt="Promo 3" />
+    </div>
+    <div class="slider-buttons">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <i class="fas fa-users"></i>
+      <div>Customers</div>
+      <span>60</span>
+    </div>
+    <div class="stat">
+      <i class="fas fa-exchange-alt"></i>
+      <div>Transactions</div>
+      <span>80</span>
+    </div>
+    <div class="stat">
+      <i class="fas fa-box-open"></i>
+      <div>Service</div>
+      <span>12</span>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>Contact: <a href="mailto:chlodny.it@gmail.com?subject=I%27d%20Like%20to%20Work%20with%20Chlodny%20IT%20%E2%80%93%20Let%27s%20Talk!&body=Hi%20Chlodny%20IT%2C%0D%0A%0D%0AI%27m%20interested%20in%20your%20services.%20Please%20let%20me%20know%20how%20we%20can%20get%20started.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D">chlodny.it@gmail.com</a></div>
+    <div><a href="privacy.html">Privacy Policy</a> | &copy; 2025 Chlodny.IT</div>
+    <div>Powered by <a href="index.html">Chlodny.IT</a></div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
